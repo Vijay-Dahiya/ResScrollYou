@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Emp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_employee"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_50"
+        android:textSize="@dimen/dp_20"
+        app:layout_constraintBottom_toTopOf="@+id/option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableTopCompat="@drawable/ic_baseline_person_24"
+        tools:ignore="SpUsage" />
+
+
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/customTv"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/option"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option"
+        app:layout_constraintTop_toTopOf="@+id/option" />
+    <EditText
+        android:id="@+id/option"
+        style="@style/customEt"
+        android:layout_marginTop="8dp"
+        android:hint="@string/select_option_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/Emp" />
+
+
+    <TextView
+        android:id="@+id/fName"
+        style="@style/customTv"
+        android:text="@string/first_name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+    <EditText
+        android:id="@+id/name"
+        style="@style/customEt"
+        android:layout_marginTop="8dp"
+        android:hint="@string/select_option_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fName"
+        app:layout_constraintTop_toBottomOf="@id/option" />
+
+
+    <TextView
+        android:id="@+id/lName"
+        style="@style/customTv"
+        android:text="@string/last_name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Name"
+        app:layout_constraintTop_toTopOf="@+id/Name" />
+    <EditText
+        android:id="@+id/Name"
+        style="@style/customEt"
+        android:layout_marginTop="8dp"
+        android:hint="@string/deo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lName"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <TextView
+        android:id="@+id/WEmail"
+        style="@style/customTv"
+        android:text="@string/work_email"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Email"
+        app:layout_constraintTop_toTopOf="@+id/Email" />
+    <EditText
+        android:id="@+id/Email"
+        style="@style/customEt"
+        android:layout_marginTop="8dp"
+        android:hint="@string/jonathan_gmail_com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/WEmail"
+        app:layout_constraintTop_toBottomOf="@id/Name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
